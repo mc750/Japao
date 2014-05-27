@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CB510C21934204300C365D7 /* MeusMurosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB510C11934204300C365D7 /* MeusMurosViewController.m */; };
+		5CB510C5193430EE00C365D7 /* graffiti2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5CB510C3193430EE00C365D7 /* graffiti2.jpg */; };
+		5CB510C6193430EE00C365D7 /* graffitti.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5CB510C4193430EE00C365D7 /* graffitti.jpg */; };
 		88949E4B19337797007B9200 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88949E4A19337797007B9200 /* Foundation.framework */; };
 		88949E4D19337797007B9200 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88949E4C19337797007B9200 /* CoreGraphics.framework */; };
 		88949E4F19337797007B9200 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88949E4E19337797007B9200 /* UIKit.framework */; };
@@ -22,6 +25,16 @@
 		88949E6C19337798007B9200 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88949E5019337797007B9200 /* CoreData.framework */; };
 		88949E7419337798007B9200 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88949E7219337798007B9200 /* InfoPlist.strings */; };
 		88949E7619337798007B9200 /* GrafitakiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88949E7519337798007B9200 /* GrafitakiTests.m */; };
+		88949E80193377E3007B9200 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88949E7F193377E3007B9200 /* Storyboard.storyboard */; };
+		88949E83193378E7007B9200 /* PrincipalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88949E82193378E7007B9200 /* PrincipalViewController.m */; };
+		88949E85193388C5007B9200 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88949E84193388C5007B9200 /* CoreLocation.framework */; };
+		88949E87193388D4007B9200 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88949E86193388D4007B9200 /* MapKit.framework */; };
+		88949E8A19339DF3007B9200 /* InicialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88949E8919339DF3007B9200 /* InicialViewController.m */; };
+		88949E8C1933A210007B9200 /* spraycan.png in Resources */ = {isa = PBXBuildFile; fileRef = 88949E8B1933A210007B9200 /* spraycan.png */; };
+		88949E911933A2D5007B9200 /* fbLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 88949E8D1933A2D5007B9200 /* fbLogo.png */; };
+		88949E921933A2D5007B9200 /* gpLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 88949E8E1933A2D5007B9200 /* gpLogo.png */; };
+		88949E931933A2D5007B9200 /* oktLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 88949E8F1933A2D5007B9200 /* oktLogo.png */; };
+		88949E941933A2D5007B9200 /* twtLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 88949E901933A2D5007B9200 /* twtLogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5CB510C01934204300C365D7 /* MeusMurosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeusMurosViewController.h; sourceTree = "<group>"; };
+		5CB510C11934204300C365D7 /* MeusMurosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeusMurosViewController.m; sourceTree = "<group>"; };
+		5CB510C3193430EE00C365D7 /* graffiti2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = graffiti2.jpg; sourceTree = "<group>"; };
+		5CB510C4193430EE00C365D7 /* graffitti.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = graffitti.jpg; sourceTree = "<group>"; };
 		88949E4719337797007B9200 /* Grafitaki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grafitaki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88949E4A19337797007B9200 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		88949E4C19337797007B9200 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +70,18 @@
 		88949E7119337798007B9200 /* GrafitakiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GrafitakiTests-Info.plist"; sourceTree = "<group>"; };
 		88949E7319337798007B9200 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		88949E7519337798007B9200 /* GrafitakiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrafitakiTests.m; sourceTree = "<group>"; };
+		88949E7F193377E3007B9200 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		88949E81193378E7007B9200 /* PrincipalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrincipalViewController.h; sourceTree = "<group>"; };
+		88949E82193378E7007B9200 /* PrincipalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrincipalViewController.m; sourceTree = "<group>"; };
+		88949E84193388C5007B9200 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		88949E86193388D4007B9200 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		88949E8819339DF3007B9200 /* InicialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InicialViewController.h; sourceTree = "<group>"; };
+		88949E8919339DF3007B9200 /* InicialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InicialViewController.m; sourceTree = "<group>"; };
+		88949E8B1933A210007B9200 /* spraycan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spraycan.png; sourceTree = "<group>"; };
+		88949E8D1933A2D5007B9200 /* fbLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fbLogo.png; sourceTree = "<group>"; };
+		88949E8E1933A2D5007B9200 /* gpLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gpLogo.png; sourceTree = "<group>"; };
+		88949E8F1933A2D5007B9200 /* oktLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oktLogo.png; sourceTree = "<group>"; };
+		88949E901933A2D5007B9200 /* twtLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twtLogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88949E87193388D4007B9200 /* MapKit.framework in Frameworks */,
+				88949E85193388C5007B9200 /* CoreLocation.framework in Frameworks */,
 				88949E4D19337797007B9200 /* CoreGraphics.framework in Frameworks */,
 				88949E5119337797007B9200 /* CoreData.framework in Frameworks */,
 				88949E4F19337797007B9200 /* UIKit.framework in Frameworks */,
@@ -103,6 +134,8 @@
 		88949E4919337797007B9200 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				88949E86193388D4007B9200 /* MapKit.framework */,
+				88949E84193388C5007B9200 /* CoreLocation.framework */,
 				88949E4A19337797007B9200 /* Foundation.framework */,
 				88949E4C19337797007B9200 /* CoreGraphics.framework */,
 				88949E4E19337797007B9200 /* UIKit.framework */,
@@ -118,7 +151,14 @@
 				88949E5B19337797007B9200 /* AppDelegate.h */,
 				88949E5C19337797007B9200 /* AppDelegate.m */,
 				88949E6119337797007B9200 /* Images.xcassets */,
+				88949E7F193377E3007B9200 /* Storyboard.storyboard */,
 				88949E5E19337797007B9200 /* Grafitaki.xcdatamodeld */,
+				88949E81193378E7007B9200 /* PrincipalViewController.h */,
+				88949E82193378E7007B9200 /* PrincipalViewController.m */,
+				88949E8819339DF3007B9200 /* InicialViewController.h */,
+				88949E8919339DF3007B9200 /* InicialViewController.m */,
+				5CB510C01934204300C365D7 /* MeusMurosViewController.h */,
+				5CB510C11934204300C365D7 /* MeusMurosViewController.m */,
 				88949E5319337797007B9200 /* Supporting Files */,
 			);
 			path = Grafitaki;
@@ -127,8 +167,15 @@
 		88949E5319337797007B9200 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				88949E8D1933A2D5007B9200 /* fbLogo.png */,
+				88949E8E1933A2D5007B9200 /* gpLogo.png */,
+				88949E8F1933A2D5007B9200 /* oktLogo.png */,
+				88949E901933A2D5007B9200 /* twtLogo.png */,
 				88949E5419337797007B9200 /* Grafitaki-Info.plist */,
+				88949E8B1933A210007B9200 /* spraycan.png */,
 				88949E5519337797007B9200 /* InfoPlist.strings */,
+				5CB510C3193430EE00C365D7 /* graffiti2.jpg */,
+				5CB510C4193430EE00C365D7 /* graffitti.jpg */,
 				88949E5819337797007B9200 /* main.m */,
 				88949E5A19337797007B9200 /* Grafitaki-Prefix.pch */,
 			);
@@ -228,8 +275,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88949E8C1933A210007B9200 /* spraycan.png in Resources */,
 				88949E5719337797007B9200 /* InfoPlist.strings in Resources */,
 				88949E6219337797007B9200 /* Images.xcassets in Resources */,
+				88949E911933A2D5007B9200 /* fbLogo.png in Resources */,
+				88949E80193377E3007B9200 /* Storyboard.storyboard in Resources */,
+				5CB510C5193430EE00C365D7 /* graffiti2.jpg in Resources */,
+				88949E921933A2D5007B9200 /* gpLogo.png in Resources */,
+				88949E941933A2D5007B9200 /* twtLogo.png in Resources */,
+				5CB510C6193430EE00C365D7 /* graffitti.jpg in Resources */,
+				88949E931933A2D5007B9200 /* oktLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,8 +304,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				88949E5D19337797007B9200 /* AppDelegate.m in Sources */,
+				5CB510C21934204300C365D7 /* MeusMurosViewController.m in Sources */,
+				88949E83193378E7007B9200 /* PrincipalViewController.m in Sources */,
 				88949E5919337797007B9200 /* main.m in Sources */,
 				88949E6019337797007B9200 /* Grafitaki.xcdatamodeld in Sources */,
+				88949E8A19339DF3007B9200 /* InicialViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +505,7 @@
 				88949E7B19337798007B9200 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88949E7C19337798007B9200 /* Build configuration list for PBXNativeTarget "GrafitakiTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +514,7 @@
 				88949E7E19337798007B9200 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
