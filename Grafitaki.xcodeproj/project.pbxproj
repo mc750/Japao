@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C02BCCB193EBBDB004C36D3 /* CallOut.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C02BCCA193EBBDB004C36D3 /* CallOut.m */; };
+		5C3AC6B0193ADA4F00354D6E /* UsuarioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3AC6AF193ADA4F00354D6E /* UsuarioViewController.m */; };
+		5C3AC6B3193AE12B00354D6E /* AnuncioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3AC6B2193AE12B00354D6E /* AnuncioViewController.m */; };
+		5C679543193D565C0057F510 /* ReservadoConcluidoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C679542193D565C0057F510 /* ReservadoConcluidoViewController.m */; };
 		5CB510C21934204300C365D7 /* MeusMurosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB510C11934204300C365D7 /* MeusMurosViewController.m */; };
 		5CB510C5193430EE00C365D7 /* graffiti2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5CB510C3193430EE00C365D7 /* graffiti2.jpg */; };
 		5CB510C6193430EE00C365D7 /* graffitti.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5CB510C4193430EE00C365D7 /* graffitti.jpg */; };
+		88569BB3193CC9890090BB89 /* Anuncio.m in Sources */ = {isa = PBXBuildFile; fileRef = 88569BB2193CC9890090BB89 /* Anuncio.m */; };
+		88569BB6193CCE6C0090BB89 /* Gerente.m in Sources */ = {isa = PBXBuildFile; fileRef = 88569BB5193CCE6C0090BB89 /* Gerente.m */; };
 		88949E4B19337797007B9200 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88949E4A19337797007B9200 /* Foundation.framework */; };
 		88949E4D19337797007B9200 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88949E4C19337797007B9200 /* CoreGraphics.framework */; };
 		88949E4F19337797007B9200 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88949E4E19337797007B9200 /* UIKit.framework */; };
@@ -48,10 +54,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C02BCC9193EBBDB004C36D3 /* CallOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallOut.h; sourceTree = "<group>"; };
+		5C02BCCA193EBBDB004C36D3 /* CallOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallOut.m; sourceTree = "<group>"; };
+		5C3AC6AE193ADA4F00354D6E /* UsuarioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsuarioViewController.h; sourceTree = "<group>"; };
+		5C3AC6AF193ADA4F00354D6E /* UsuarioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsuarioViewController.m; sourceTree = "<group>"; };
+		5C3AC6B1193AE12B00354D6E /* AnuncioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnuncioViewController.h; sourceTree = "<group>"; };
+		5C3AC6B2193AE12B00354D6E /* AnuncioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnuncioViewController.m; sourceTree = "<group>"; };
+		5C679541193D565B0057F510 /* ReservadoConcluidoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReservadoConcluidoViewController.h; sourceTree = "<group>"; };
+		5C679542193D565C0057F510 /* ReservadoConcluidoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReservadoConcluidoViewController.m; sourceTree = "<group>"; };
 		5CB510C01934204300C365D7 /* MeusMurosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeusMurosViewController.h; sourceTree = "<group>"; };
 		5CB510C11934204300C365D7 /* MeusMurosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeusMurosViewController.m; sourceTree = "<group>"; };
 		5CB510C3193430EE00C365D7 /* graffiti2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = graffiti2.jpg; sourceTree = "<group>"; };
 		5CB510C4193430EE00C365D7 /* graffitti.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = graffitti.jpg; sourceTree = "<group>"; };
+		88569BB1193CC9890090BB89 /* Anuncio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Anuncio.h; sourceTree = "<group>"; };
+		88569BB2193CC9890090BB89 /* Anuncio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Anuncio.m; sourceTree = "<group>"; };
+		88569BB4193CCE6C0090BB89 /* Gerente.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gerente.h; sourceTree = "<group>"; };
+		88569BB5193CCE6C0090BB89 /* Gerente.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gerente.m; sourceTree = "<group>"; };
 		88949E4719337797007B9200 /* Grafitaki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grafitaki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88949E4A19337797007B9200 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		88949E4C19337797007B9200 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -150,15 +168,27 @@
 			children = (
 				88949E5B19337797007B9200 /* AppDelegate.h */,
 				88949E5C19337797007B9200 /* AppDelegate.m */,
+				88569BB1193CC9890090BB89 /* Anuncio.h */,
+				88569BB2193CC9890090BB89 /* Anuncio.m */,
+				88569BB4193CCE6C0090BB89 /* Gerente.h */,
+				88569BB5193CCE6C0090BB89 /* Gerente.m */,
+				5C02BCC9193EBBDB004C36D3 /* CallOut.h */,
+				5C02BCCA193EBBDB004C36D3 /* CallOut.m */,
 				88949E6119337797007B9200 /* Images.xcassets */,
-				88949E7F193377E3007B9200 /* Storyboard.storyboard */,
-				88949E5E19337797007B9200 /* Grafitaki.xcdatamodeld */,
 				88949E81193378E7007B9200 /* PrincipalViewController.h */,
 				88949E82193378E7007B9200 /* PrincipalViewController.m */,
 				88949E8819339DF3007B9200 /* InicialViewController.h */,
 				88949E8919339DF3007B9200 /* InicialViewController.m */,
 				5CB510C01934204300C365D7 /* MeusMurosViewController.h */,
 				5CB510C11934204300C365D7 /* MeusMurosViewController.m */,
+				5C3AC6AE193ADA4F00354D6E /* UsuarioViewController.h */,
+				5C3AC6AF193ADA4F00354D6E /* UsuarioViewController.m */,
+				5C3AC6B1193AE12B00354D6E /* AnuncioViewController.h */,
+				5C3AC6B2193AE12B00354D6E /* AnuncioViewController.m */,
+				5C679541193D565B0057F510 /* ReservadoConcluidoViewController.h */,
+				5C679542193D565C0057F510 /* ReservadoConcluidoViewController.m */,
+				88949E7F193377E3007B9200 /* Storyboard.storyboard */,
+				88949E5E19337797007B9200 /* Grafitaki.xcdatamodeld */,
 				88949E5319337797007B9200 /* Supporting Files */,
 			);
 			path = Grafitaki;
@@ -306,9 +336,15 @@
 				88949E5D19337797007B9200 /* AppDelegate.m in Sources */,
 				5CB510C21934204300C365D7 /* MeusMurosViewController.m in Sources */,
 				88949E83193378E7007B9200 /* PrincipalViewController.m in Sources */,
+				5C679543193D565C0057F510 /* ReservadoConcluidoViewController.m in Sources */,
 				88949E5919337797007B9200 /* main.m in Sources */,
 				88949E6019337797007B9200 /* Grafitaki.xcdatamodeld in Sources */,
 				88949E8A19339DF3007B9200 /* InicialViewController.m in Sources */,
+				5C3AC6B3193AE12B00354D6E /* AnuncioViewController.m in Sources */,
+				5C02BCCB193EBBDB004C36D3 /* CallOut.m in Sources */,
+				88569BB6193CCE6C0090BB89 /* Gerente.m in Sources */,
+				5C3AC6B0193ADA4F00354D6E /* UsuarioViewController.m in Sources */,
+				88569BB3193CC9890090BB89 /* Anuncio.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

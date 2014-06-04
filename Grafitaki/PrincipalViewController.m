@@ -9,18 +9,30 @@
 #import "PrincipalViewController.h"
 #import <MapKit/MapKit.h>
 #import "MeusMurosViewController.h"
+#import "CallOut.h"
+#import "Gerente.h"
 #define WIDTH 100
 #define NUMBER_OF_SECTIONS 7
 
-@interface PrincipalViewController ()
+@interface PrincipalViewController () <MKMapViewDelegate>
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (nonatomic, strong) NSArray *buttonsNames;
 @property (nonatomic, assign) BOOL menuIsHidden;
 @property (nonatomic, strong) UIView *sideMenu;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (nonatomic, strong) MeusMurosViewController *muros;
 @end
 
 @implementation PrincipalViewController
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    if([[Gerente gerente].arrayCallouts count]>0){
+        for (CallOut *temp in [Gerente gerente].arrayCallouts) {
+            [self.mapView addAnnotation:temp];
+        }
+    }
+}
 
 - (void)viewDidLoad
 {
@@ -32,6 +44,15 @@
     [self.view addSubview:self.sideMenu];
     self.buttonsNames=[NSArray arrayWithObjects:@"Nome", @"Meus Muros", @"Minhas Artes", @"Mensagens", @"Novas Obras", @"Contatos", @"Sair", nil];
     [self allocMenu];
+
+    //Dismiss keyboard
+    UIGestureRecognizer *gesture=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(dismissKeyboard)];
+    [self.view addGestureRecognizer:gesture];
+    
+    //Fix pin
+    UILongPressGestureRecognizer *longPress=[[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(fixPin:)];
+    [self.mapView addGestureRecognizer:longPress];
+    
 }
 
 /*Funcao que move os elementos de tela: menu e o mapa*/
@@ -66,6 +87,9 @@
         NSString *temp=self.buttonsNames[i];
         [sideBarButton setTitle:temp forState:UIControlStateNormal];
         sideBarButton.frame=CGRectMake(self.sideMenu.bounds.origin.x, self.sideMenu.bounds.origin.y+buttonHeight*i, WIDTH, buttonHeight);   //Bounds pois é em relaçao a sideMenu
+        if(i==2 || i== 3 || i==4 || i==5){                  //Pois nao foram implementados ainda
+            sideBarButton.enabled=NO;
+        }
         [self.sideMenu addSubview:sideBarButton];
     }
 }
@@ -100,9 +124,11 @@
     switch ([button tag]) {
         case 0:
             //Goto Name
-            NSLog(@"Nome do user");
+            [self performSegueWithIdentifier:@"GoToUser" sender:nil];
+            [self hideMenu];
             break;
         case 1:
+            //Goto Muros
             [self performSegueWithIdentifier:@"GoToMuros" sender:nil];
             [self hideMenu];
             break;
@@ -119,7 +145,9 @@
             NSLog(@"Contatos");
             break;
         case 6:
-            NSLog(@"Sair");
+            //Goto home
+            [self.navigationController popToRootViewControllerAnimated:YES];
+            [self hideMenu];
             break;
         default:
             break;
@@ -132,14 +160,48 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)dismissKeyboard{
+    [self.searchBar resignFirstResponder];
+}
+
+-(void)fixPin:(UILongPressGestureRecognizer*)recognizer{
+    if(recognizer.state==UIGestureRecognizerStateBegan){
+        /*Converte o toque na tela em um ponto com coordenadas para o mapa*/
+        CGPoint touchLocation=[recognizer locationInView:self.mapView];
+        CLLocationCoordinate2D coordinate=[self.mapView convertPoint:touchLocation toCoordinateFromView:self.mapView];
+        CallOut *popUp=[[CallOut alloc]init];
+        popUp.latitude=coordinate.latitude;
+        popUp.longitude=coordinate.longitude;
+        popUp.text=@"Anuncio";
+        [[Gerente gerente].arrayCallouts addObject:popUp];
+        [self.mapView addAnnotation:popUp];
+    }
+}
 
 #pragma mark - Navigation
-
+/*
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
 //    if([segue.identifier isEqualToString:@"GoToMuros"]){
 //    }
+}
+*/
+
+#pragma mark - Delegates
+
+/*Mostra o callout quando seleciona o pin*/
+-(MKAnnotationView*)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
+    MKAnnotationView *annotationView=[mapView dequeueReusableAnnotationViewWithIdentifier:@"identifier"];
+    if([annotation isKindOfClass:[CallOut class]]){
+        CallOut *temp=(CallOut *)annotation;
+        if(annotationView==nil){
+            annotationView=[temp annotationView];
+        }else{
+            annotationView.annotation=annotation;
+        }
+    }
+    return annotationView;
 }
 
 
